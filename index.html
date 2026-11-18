@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>91色九色蝌蚪-资源索引与片单更新观察</title>
+<meta name="description" content="91色九色蝌蚪是一个资源索引类站点入口，页面整理片单索引、分类频道、深度解析与体验指南，记录2026年10月至11月的更新条目、规则变化与用户反馈，帮助访问者判断索引站的信息层级与使用方式。">
+<meta name="keywords" content="91色九色蝌蚪">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101826'/%3E%3Ccircle cx='32' cy='26' r='11' fill='%23f0b54a'/%3E%3Ccircle cx='20' cy='38' r='6' fill='%23e8654f'/%3E%3Ccircle cx='44' cy='38' r='6' fill='%234fb6a6'/%3E%3Cellipse cx='32' cy='48' rx='16' ry='6' fill='%23f0b54a' opacity='.35'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0d1420;
+  --bg-soft:#121b2a;
+  --panel:#16223348;
+  --card:#15202f;
+  --card-2:#1a2739;
+  --line:#26364c;
+  --line-soft:#1d2b3d;
+  --text:#e6ecf4;
+  --muted:#9aabc0;
+  --dim:#7487a0;
+  --gold:#f0b54a;
+  --coral:#e8654f;
+  --teal:#4fb6a6;
+  --radius:14px;
+  --radius-sm:9px;
+  --fs-1:clamp(1.9rem,3.4vw,2.9rem);
+  --fs-2:1.35rem;
+  --fs-3:1.08rem;
+  --fs-body:1rem;
+  --fs-sm:.86rem;
+  --shadow:0 10px 28px #050a12aa;
+  --gap:clamp(1rem,2.2vw,1.6rem);
+  --announce-h:38px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--announce-h) + 112px)}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:var(--fs-body);line-height:1.75;
+  background-image:radial-gradient(1200px 520px at 82% -10%,#1c2c44 0%,transparent 62%),radial-gradient(900px 400px at -8% 4%,#1a2636 0%,transparent 58%);
+  background-attachment:fixed;
+}
+a{color:var(--teal);text-decoration:none}
+a:hover{color:var(--gold)}
+h1,h2,h3,h4{line-height:1.3;margin:0}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .85em;padding-left:1.25em}
+li{margin:.3em 0}
+img{max-width:100%;height:auto;display:block}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+/* ---------- 吸顶公告条 ---------- */
+.announce{
+  position:sticky;top:0;z-index:60;
+  height:var(--announce-h);
+  display:flex;align-items:center;justify-content:center;
+  gap:.6rem;
+  background:linear-gradient(90deg,#1b2a3f,#22364f 50%,#1b2a3f);
+  border-bottom:1px solid var(--line);
+  font-size:var(--fs-sm);color:#cfdcec;
+  padding:0 .8rem;text-align:center;
+}
+.announce .dotlive{
+  width:7px;height:7px;border-radius:50%;background:var(--gold);
+  box-shadow:0 0 0 3px #f0b54a2e;flex:none;
+}
+.announce strong{color:var(--gold);font-weight:600}
+.announce a{color:#bfe6e0;text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- 吸顶页头 ---------- */
+.site-head{
+  position:sticky;top:var(--announce-h);z-index:55;
+  background:#0f1826f2;
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head-inner{
+  max-width:1180px;margin:0 auto;padding:.55rem clamp(.9rem,2.5vw,1.6rem);
+  display:flex;align-items:center;gap:1rem;
+}
+.brand{display:flex;align-items:center;gap:.55rem;flex:none}
+.brand-mark{width:34px;height:34px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text .bt-main{font-weight:700;letter-spacing:.02em;font-size:1.02rem;color:#f2f5fa}
+.brand-text .bt-sub{font-size:.66rem;color:var(--dim);letter-spacing:.14em}
+.nav-toggle{
+  display:none;margin-left:auto;background:var(--card-2);border:1px solid var(--line);
+  border-radius:8px;padding:.4rem .6rem;cursor:pointer;
+}
+.nav-toggle span{display:block;width:18px;height:2px;background:#dbe6f3;margin:3px 0;border-radius:2px}
+.main-nav{margin-left:auto}
+.main-nav ul{display:flex;gap:.15rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.main-nav a{
+  display:block;padding:.42rem .62rem;border-radius:8px;color:#c3d2e4;font-size:.9rem;
+  border:1px solid transparent;transition:.18s;
+}
+.main-nav a:hover{background:#1b2a3d;color:#fff;transform:translateY(-2px)}
+.head-extra{display:flex;align-items:center;gap:.5rem;margin-left:.4rem}
+.search-box{display:flex;align-items:center;background:#101b29;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.search-box input{
+  background:transparent;border:0;padding:.42rem .6rem;color:var(--text);
+  width:8.4rem;font-size:.86rem;
+}
+.search-box input::placeholder{color:var(--dim)}
+.search-box button{
+  background:var(--card-2);border:0;border-left:1px solid var(--line);
+  padding:.42rem .62rem;cursor:pointer;color:var(--gold);font-size:.84rem;
+}
+.search-box button:hover{background:#233349}
+.head-cta{
+  background:var(--gold);color:#1a1408;font-weight:600;font-size:.85rem;
+  padding:.42rem .78rem;border-radius:9px;white-space:nowrap;
+}
+.head-cta:hover{color:#1a1408;background:#ffca63}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(.9rem,2.5vw,1.6rem)}
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;
+  gap:var(--gap);align-items:start;padding:var(--gap) 0 2.4rem;
+}
+main{min-width:0}
+aside{position:sticky;top:calc(var(--announce-h) + 122px)}
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1rem 1.05rem;margin-bottom:var(--gap);
+}
+.side-card h2{font-size:.98rem;margin-bottom:.6rem;color:#eef3fa}
+.side-card ol,.side-card ul{list-style:none;margin:0;padding:0;font-size:.88rem}
+.side-card li{padding:.34rem 0;border-bottom:1px dashed var(--line-soft);display:flex;gap:.5rem}
+.side-card li:last-child{border-bottom:0}
+.side-card li .num{color:var(--gold);font-weight:700;flex:none}
+.side-card li a{color:#c8d7e8}
+.side-card li a:hover{color:var(--gold)}
+.side-nav a.active{color:var(--gold);font-weight:600}
+.side-nav li{display:block}
+.side-nav i{font-style:normal;color:var(--dim);font-size:.78rem;display:block;margin-left:1.2rem}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  border:1px solid var(--line);border-radius:calc(var(--radius) + 4px);
+  background:linear-gradient(140deg,#16233a 0%,#101a29 55%,#0e1724 100%);
+  padding:clamp(1.4rem,3.4vw,2.6rem);
+  margin-bottom:var(--gap);
+}
+.hero::after{
+  content:"";position:absolute;inset:auto -60px -90px auto;width:320px;height:320px;
+  background:radial-gradient(circle,#4fb6a62b,transparent 68%);pointer-events:none;
+}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:var(--gap);align-items:center}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:.45rem;font-size:.78rem;letter-spacing:.08em;
+  color:#bfe6e0;border:1px solid #2f4a5e;background:#12212e;border-radius:999px;
+  padding:.22rem .7rem;margin-bottom:.9rem;
+}
+.hero h1{font-size:var(--fs-1);letter-spacing:.01em;margin-bottom:.5rem;color:#fff}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-lead{color:#b9c9dc;max-width:34em;font-size:1rem}
+.hero-lead b{color:#e9f0f8;font-weight:600}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.btn{
+  display:inline-block;padding:.6rem 1.05rem;border-radius:10px;font-size:.92rem;
+  border:1px solid var(--line);background:var(--card-2);color:#dbe7f4;transition:.18s;
+}
+.btn:hover{transform:translateY(-2px);border-color:#3b5470;color:#fff}
+.btn-primary{background:var(--gold);border-color:var(--gold);color:#1b1406;font-weight:600}
+.btn-primary:hover{background:#ffca63;color:#1b1406}
+.hero-stats{display:flex;gap:1.4rem;margin-top:1.25rem;flex-wrap:wrap}
+.hero-stats div{min-width:76px}
+.hero-stats b{display:block;font-size:1.28rem;color:var(--gold);letter-spacing:.02em}
+.hero-stats span{font-size:.78rem;color:var(--dim);display:block}
+/* 原创视觉：索引轨道 */
+.hero-art{position:relative;min-height:250px}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 26px #00000066)}
+
+/* ---------- 板块通用 ---------- */
+.section{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(1rem,2.2vw,1.5rem);margin-bottom:var(--gap);
+}
+.section-head{display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap;margin-bottom:.35rem}
+.section-head h2{font-size:var(--fs-2);color:#fff}
+.section-sub{color:var(--dim);font-size:.83rem;margin-bottom:1rem}
+.kicker{font-size:.74rem;letter-spacing:.14em;color:var(--teal);text-transform:uppercase}
+
+/* 领域概览：对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.6rem}
+.compare-col{border:1px solid var(--line-soft);border-radius:var(--radius-sm);padding:.85rem 1rem;background:#0f1a27}
+.compare-col h3{font-size:.98rem;margin-bottom:.35rem}
+.compare-col ul{margin:0;padding-left:1.1em;font-size:.9rem;color:#c4d3e4}
+.compare-col.plan-a{border-top:3px solid var(--gold)}
+.compare-col.plan-b{border-top:3px solid var(--teal)}
+
+/* 精选推荐：网格卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:1rem}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.2s;
+}
+.card:hover{transform:translateY(-3px);border-color:#38516d;box-shadow:var(--shadow)}
+.card-thumb{aspect-ratio:16/9;width:100%;object-fit:cover}
+.card-body{padding:.8rem .9rem 1rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.card-body h3{font-size:.99rem;color:#f1f5fb}
+.card-body p{font-size:.85rem;color:var(--muted);margin:0}
+.tag-row{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:auto;padding-top:.4rem}
+.tag{font-size:.72rem;color:#bfe6e0;background:#122330;border:1px solid #2b4353;border-radius:6px;padding:.1rem .45rem}
+.card-meta{font-size:.74rem;color:var(--dim);display:flex;gap:.6rem;flex-wrap:wrap}
+
+/* 最新更新：紧凑列表 */
+.update-list{list-style:none;margin:0;padding:0}
+.update-list li{
+  display:grid;grid-template-columns:74px 1fr auto;gap:.8rem;align-items:baseline;
+  padding:.62rem 0;border-bottom:1px dashed var(--line-soft);font-size:.92rem;
+}
+.update-list li:last-child{border-bottom:0}
+.update-list time{color:var(--gold);font-size:.8rem;font-variant-numeric:tabular-nums}
+.update-list .u-main{color:#d5e1ef;min-width:0}
+.update-list .u-main small{display:block;color:var(--dim);font-size:.78rem;margin-top:.12rem}
+.update-list .u-kind{font-size:.72rem;color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:.05rem .4rem;white-space:nowrap}
+
+/* 分类入口：标签索引 */
+.cat-index{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.4rem}
+.cat-index a{
+  display:inline-flex;align-items:center;gap:.4rem;font-size:.88rem;color:#d3e0ee;
+  border:1px solid var(--line);background:#101b29;border-radius:999px;padding:.34rem .78rem;transition:.18s;
+}
+.cat-index a:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.cat-index a i{font-style:normal;color:var(--dim);font-size:.74rem}
+
+/* 深度解析：分栏正文 */
+.deep{border-left:3px solid var(--gold);padding-left:1rem}
+.deep h3{font-size:var(--fs-3);margin:1.3rem 0 .45rem;color:#fff}
+.deep h3:first-of-type{margin-top:.3rem}
+.deep p{color:#c6d4e3;font-size:.95rem}
+.deep table{width:100%;border-collapse:collapse;font-size:.86rem;margin:.6rem 0 1rem}
+.deep th,.deep td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+.deep th{background:#141f2e;color:#dbe7f4;font-weight:600}
+.deep td{color:#bfcfdf}
+.deep .claim{
+  background:#17253a;border:1px solid #2c4259;border-radius:var(--radius-sm);
+  padding:.8rem .95rem;margin:.9rem 0;font-size:.92rem;color:#dbe7f4;
+}
+.deep .claim strong{color:var(--gold)}
+.deep blockquote{
+  margin:.9rem 0;padding:.7rem 1rem;background:#0f1a27;border-left:2px solid var(--teal);
+  color:#b9cbe0;font-size:.9rem;border-radius:0 8px 8px 0;
+}
+.deep blockquote footer{color:var(--dim);font-size:.78rem;margin-top:.35rem}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;counter-reset:st;margin:.4rem 0 0;padding:0;display:grid;gap:.7rem}
+.steps li{
+  counter-increment:st;position:relative;padding:.75rem .9rem .75rem 3rem;
+  background:#101b29;border:1px solid var(--line-soft);border-radius:var(--radius-sm);
+  font-size:.92rem;color:#c8d6e6;
+}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);position:absolute;left:.8rem;top:.72rem;
+  color:var(--gold);font-weight:700;font-variant-numeric:tabular-nums;font-size:.92rem;
+}
+.steps li b{color:#eef3fa}
+
+/* FAQ */
+details.faq{
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#101b29;
+  margin-bottom:.55rem;overflow:hidden;
+}
+details.faq summary{
+  cursor:pointer;padding:.72rem .95rem;font-weight:600;font-size:.94rem;color:#e2eaf4;
+  list-style:none;display:flex;gap:.55rem;align-items:flex-start;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::before{content:"＋";color:var(--gold);flex:none;font-weight:700}
+details.faq[open] summary::before{content:"－"}
+details.faq .ans{padding:0 .95rem .85rem 2.15rem;color:var(--muted);font-size:.9rem}
+details.faq .ans p:last-child{margin-bottom:0}
+
+/* 用户评论 */
+.comment-list{display:grid;gap:.7rem;margin-top:.4rem}
+.comment{
+  border:1px solid var(--line-soft);border-radius:var(--radius-sm);padding:.75rem .95rem;
+  background:#0f1a27;
+}
+.comment-top{display:flex;gap:.55rem;align-items:baseline;flex-wrap:wrap;font-size:.82rem}
+.comment-top b{color:#e9f0f8}
+.comment-top .who{color:var(--dim)}
+.comment-top time{color:var(--dim);margin-left:auto;font-variant-numeric:tabular-nums}
+.comment p{margin:.35rem 0 0;font-size:.9rem;color:#c3d2e4}
+.comment .ref{font-size:.76rem;color:var(--teal)}
+.comment .stars{color:var(--gold);letter-spacing:.08em;font-size:.8rem}
+
+/* 相关资讯 & 推荐 */
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.9rem}
+.news-item{border:1px solid var(--line-soft);border-radius:var(--radius-sm);padding:.8rem .9rem;background:#101b29;transition:.18s}
+.news-item:hover{transform:translateY(-2px);border-color:#33495f}
+.news-item h3{font-size:.94rem;margin-bottom:.3rem;color:#eef3fa}
+.news-item p{font-size:.84rem;color:var(--muted);margin:0 0 .4rem}
+.news-item time{font-size:.75rem;color:var(--gold)}
+.rec-tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.5rem}
+.rec-tags a{
+  font-size:.83rem;color:#cfdcec;border:1px dashed #34495e;border-radius:8px;
+  padding:.28rem .65rem;background:#0f1a27;transition:.18s;
+}
+.rec-tags a:hover{color:var(--gold);border-color:var(--gold);border-style:solid}
+
+/* 榜单 / 时间线 */
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:rk}
+.rank-list li{
+  counter-increment:rk;display:grid;grid-template-columns:28px 1fr auto;gap:.7rem;align-items:center;
+  padding:.5rem 0;border-bottom:1px dashed var(--line-soft);font-size:.92rem;
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{content:counter(rk);color:var(--gold);font-weight:700;font-size:.9rem}
+.timeline{list-style:none;margin:.4rem 0 0;padding:0 0 0 1rem;border-left:1px solid var(--line)}
+.timeline li{position:relative;padding:.1rem 0 .85rem 1rem;font-size:.9rem;color:#c6d4e3}
+.timeline li::before{content:"";position:absolute;left:-1.34rem;top:.5rem;width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 3px #4fb6a622}
+.timeline time{display:block;color:var(--gold);font-size:.78rem;font-variant-numeric:tabular-nums}
+.store-quote{border:1px solid #34495e;background:linear-gradient(120deg,#152235,#101a27);border-radius:var(--radius-sm);padding:1rem 1.1rem;font-size:.94rem;color:#d6e2f0}
+.store-quote footer{margin-top:.5rem;color:var(--dim);font-size:.8rem}
+
+/* 页尾 */
+.site-foot{border-top:1px solid var(--line);background:#0b1220;margin-top:.4rem}
+.foot-inner{max-width:1180px;margin:0 auto;padding:2rem clamp(.9rem,2.5vw,1.6rem) 1.2rem}
+.foot-top{display:grid;grid-template-columns:1.2fr 2fr;gap:var(--gap);padding-bottom:1.4rem;border-bottom:1px solid var(--line-soft)}
+.foot-brand{display:flex;gap:.6rem;align-items:flex-start}
+.foot-brand svg{width:34px;height:34px;flex:none}
+.foot-brand .fb-name{font-weight:700;color:#eef3fa}
+.foot-brand .fb-line{font-size:.83rem;color:var(--dim);margin-top:.3rem;max-width:22em}
+.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;font-size:.85rem}
+.foot-cols h3{font-size:.88rem;color:#dbe7f4;margin-bottom:.4rem}
+.foot-cols ul{list-style:none;margin:0;padding:0}
+.foot-cols li{margin:.22rem 0}
+.foot-cols a{color:var(--muted)}
+.foot-cols a:hover{color:var(--gold)}
+.foot-bottom{padding-top:1rem;color:var(--dim);font-size:.78rem;display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;justify-content:space-between;align-items:center}
+.foot-bottom .note{max-width:60em}
+.foot-bottom .upd{color:var(--teal);font-variant-numeric:tabular-nums}
+
+/* 返回顶部 */
+.to-top{
+  position:fixed;right:1rem;bottom:1.2rem;z-index:70;
+  width:42px;height:42px;border-radius:12px;border:1px solid #3a5068;
+  background:#16243a;color:var(--gold);cursor:pointer;display:none;
+  box-shadow:var(--shadow);font-size:1rem;
+}
+.to-top.show{display:block}
+.to-top:hover{background:#1d2f49}
+
+/* 搜索结果反馈 */
+.search-feedback{
+  display:none;margin:.2rem 0 0;font-size:.84rem;color:var(--gold);
+  background:#1a2739;border:1px solid var(--line);border-radius:8px;padding:.5rem .7rem;
+}
+.search-feedback.on{display:block}
+
+/* 平板 */
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  aside{position:static}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{order:2;min-height:0}
+  .foot-top{grid-template-columns:1fr}
+  .head-extra .search-box{display:none}
+  .main-nav ul{flex-wrap:nowrap;overflow-x:auto;padding-bottom:.2rem;max-width:46vw}
+}
+@media (max-width:720px){
+  .nav-toggle{display:block}
+  .main-nav{
+    position:absolute;left:0;right:0;top:100%;
+    background:#0f1826;border-bottom:1px solid var(--line);
+    display:none;padding:.5rem .9rem;margin:0;
+  }
+  .main-nav.open{display:block}
+  .main-nav ul{flex-direction:column;max-width:none;overflow:visible}
+  .main-nav a{padding:.55rem .5rem;border-bottom:1px dashed var(--line-soft)}
+  .head-inner{position:relative}
+  .head-cta{display:none}
+  .compare{grid-template-columns:1fr}
+  .update-list li{grid-template-columns:64px 1fr}
+  .update-list .u-kind{grid-column:2;justify-self:start;margin-top:.2rem}
+  .foot-cols{grid-template-columns:1fr 1fr}
+  .deep table{font-size:.8rem}
+  .deep th,.deep td{padding:.35rem .4rem}
+  .to-top{right:.7rem;bottom:.8rem;width:38px;height:38px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  a:hover,.btn:hover,.card:hover,.cat-index a:hover,.news-item:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" id="announce">
+  <span class="dotlive" aria-hidden="true"></span>
+  <span><strong>91色九色蝌蚪</strong> · 11月7日夜间批次更新：新增分类索引 214 条，删除失效入口 37 条</span>
+  <a href="/#updates">看更新清单</a>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="/#top" aria-label="91色九色蝌蚪 首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="三色索引标志">
+        <rect width="64" height="64" rx="14" fill="#111c2c"/>
+        <circle cx="32" cy="25" r="10" fill="#f0b54a"/>
+        <circle cx="21" cy="37" r="6" fill="#e8654f"/>
+        <circle cx="43" cy="37" r="6" fill="#4fb6a6"/>
+        <ellipse cx="32" cy="46" rx="15" ry="5.5" fill="#f0b54a" opacity=".3"/>
+        <path d="M25 25h14M32 18v14" stroke="#111c2c" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="bt-main">91色九色蝌蚪</span>
+        <span class="bt-sub">INDEX · LIST · NOTE</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="展开主题导航">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="主题导航">
+      <ul>
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#picks">精选片单</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#channels">分类频道</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#comments">用户反馈</a></li>
+      </ul>
+    </nav>
+
+    <div class="head-extra">
+      <form class="search-box" id="searchForm" role="search">
+        <input type="search" id="searchInput" placeholder="查条目 / 分类" aria-label="站内条目查找">
+        <button type="submit">查找</button>
+      </form>
+      <a class="head-cta" href="/#channels">频道索引</a>
+    </div>
+  </div>
+  <p class="search-feedback wrap" id="searchFeedback" role="status" aria-live="polite"></p>
+</header>
+
+<div class="wrap" id="top">
+  <div class="layout">
+    <main>
+
+      <!-- 首屏 -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-grid">
+          <div>
+            <span class="hero-tag">资源索引 · 2026年11月观察</span>
+            <h1 id="heroTitle">91色九色蝌蚪</h1>
+            <p class="hero-lead">一个以分类索引和片单记录为主的资源入口型站点。页面保留频道编号、批次时间与失效条目处理规则，<b>214 条新增索引</b>与 <b>37 条下架清理</b>均可在更新清单里逐条对照；适合先看结构再看条目的人。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="/#channels">进入分类频道</a>
+              <a class="btn" href="/#deep">读深度解析</a>
+              <a class="btn" href="/#updates">11月7日更新</a>
+            </div>
+            <div class="hero-stats">
+              <div><b>12</b><span>主题频道</span></div>
+              <div><b>214</b><span>新增索引条目</span></div>
+              <div><b>37</b><span>失效入口清理</span></div>
+              <div><b>9</b><span>固定片单</span></div>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 420 300" role="presentation">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f0b54a" stop-opacity=".95"/>
+                  <stop offset="1" stop-color="#e8654f" stop-opacity=".8"/>
+                </linearGradient>
+                <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0" stop-color="#4fb6a6" stop-opacity=".9"/>
+                  <stop offset="1" stop-color="#2b6d8f" stop-opacity=".65"/>
+                </linearGradient>
+              </defs>
+              <rect x="12" y="14" width="396" height="272" rx="18" fill="#0e1826" stroke="#26364c"/>
+              <g stroke="#22334a" stroke-width="1">
+                <path d="M40 60h340M40 110h340M40 160h340M40 210h340M40 258h340"/>
+              </g>
+              <g>
+                <rect x="42" y="76" width="112" height="24" rx="12" fill="url(#g1)" opacity=".9"/>
+                <rect x="166" y="76" width="76" height="24" rx="12" fill="#1d2f49" stroke="#33506b"/>
+                <rect x="254" y="76" width="124" height="24" rx="12" fill="#1d2f49" stroke="#33506b"/>
+                <rect x="42" y="126" width="150" height="24" rx="12" fill="url(#g2)" opacity=".9"/>
+                <rect x="204" y="126" width="174" height="24" rx="12" fill="#1d2f49" stroke="#33506b"/>
+                <rect x="42" y="176" width="92" height="24" rx="12" fill="#1d2f49" stroke="#33506b"/>
+                <rect x="146" y="176" width="132" height="24" rx="12" fill="url(#g1)" opacity=".55"/>
+                <rect x="290" y="176" width="88" height="24" rx="12" fill="#1d2f49" stroke="#33506b"/>
+              </g>
+              <circle cx="336" cy="60" r="5" fill="#f0b54a"/>
+              <circle cx="352" cy="60" r="5" fill="#e8654f" opacity=".8"/>
+              <circle cx="368" cy="60" r="5" fill="#4fb6a6" opacity=".85"/>
+              <path d="M42 228h336" stroke="#2f4761" stroke-dasharray="4 6"/>
+              <text x="42" y="248" fill="#7487a0" font-size="11" font-family="monospace">BATCH 2026-11-07 · 214 ADD · 37 DEL</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1 领域概览 -->
+      <section class="section" id="overview" aria-labelledby="ovTitle">
+        <div class="section-head">
+          <span class="kicker">Overview</span>
+          <h2 id="ovTitle">索引站到底是什么：两种组织方式的差别</h2>
+        </div>
+        <p class="section-sub">先把“入口型索引”和“内容型站内页”分开看，多数误判都发生在这一步。</p>
+        <p>这类站点自己通常不存放片源，做的是把散落在不同地址的条目整理成编号列表，再按频道和标签分层。判断一个列表靠不靠谱，先看它有没有明确的批次时间、失效清理记录和编号规则。以 2026 年 10 月 12 日启用的“九色编号”为例，前两位表示频道，后四位是条目流水号，<b>0914-0221</b> 就属于第 09 频道第 221 条；改动编号意味着条目被替换，而不是简单改名。</p>
+        <div class="compare">
+          <div class="compare-col plan-a">
+            <h3>入口型索引</h3>
+            <ul>
+              <li>以编号 + 频道为主索引</li>
+              <li>每批次公开增删数量</li>
+              <li>失效条目 7 日内下架</li>
+              <li>适合按类别快速跳转</li>
+            </ul>
+          </div>
+          <div class="compare-col plan-b">
+            <h3>内容型站内页</h3>
+            <ul>
+              <li>以标题 + 简介为主索引</li>
+              <li>更新以单篇为单位</li>
+              <li>靠归档而不是清理维持</li>
+              <li>适合按话题连续阅读</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="section" id="picks" aria-labelledby="pkTitle">
+        <div class="section-head">
+          <span class="kicker">Picks</span>
+          <h2 id="pkTitle">九色编号片单：本周被翻得最多的 6 组</h2>
+        </div>
+        <p class="section-sub">统计口径是 11 月 1 日至 11 月 7 日的站内跳转次数，不是播放量。</p>
+        <div class="card-grid">
+          <article class="card">
+            <img class="card-thumb" src="https://picsum.photos/seed/kd0921/480/270" width="480" height="270" loading="lazy" alt="深色背景下的胶片与编号卡片排列">
+            <div class="card-body">
+              <h3>09 频道·夜间片单合集</h3>
+              <p>23 条，按 10 月 28 日修订的排序规则重排，片长与更新日期分开标注。</p>
+              <div class="card-meta"><span>11月6日</span><span>跳转 1.8 万</span></div>
+              <div class="tag-row"><span class="tag">夜间片单</span><span class="tag">编号重排</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="https://picsum.photos/seed/kd1103/480/270" width="480" height="270" loading="lazy" alt="桌面上的索引标签与色块卡片">
+            <div class="card-body">
+              <h3>三色标签筛选法实测</h3>
+              <p>用金、红、青三色区分稳定、待核、临时三类条目，配 11 月 3 日的筛选截图说明。</p>
+              <div class="card-meta"><span>11月4日</span><span>收藏 6200</span></div>
+              <div class="tag-row"><span class="tag">三色标签</span><span class="tag">筛选技巧</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="https://picsum.photos/seed/kd1015/480/270" width="480" height="270" loading="lazy" alt="笔记本上记录频道编号与日期">
+            <div class="card-body">
+              <h3>蝌蚪频道分类速查表</h3>
+              <p>12 个频道各配一行关键词，标注编号前缀与最近一次整批更新时间。</p>
+              <div class="card-meta"><span>11月2日</span><span>下载 3100</span></div>
+              <div class="tag-row"><span class="tag">频道速查</span><span class="tag">编号前缀</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="https://picsum.photos/seed/kd1027/480/270" width="480" height="270" loading="lazy" alt="时间线手写记录与日历">
+            <div class="card-body">
+              <h3>10月批次更新对照</h3>
+              <p>10 月 12 日与 10 月 26 日两批的增删对照，含 19 条被换号条目。</p>
+              <div class="card-meta"><span>10月27日</span><span>跳转 9400</span></div>
+              <div class="tag-row"><span class="tag">批次对照</span><span class="tag">换号记录</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="https://picsum.photos/seed/kd1106/480/270" width="480" height="270" loading="lazy" alt="多台设备并排显示列表页面">
+            <div class="card-body">
+              <h3>移动端页面卡顿排查</h3>
+              <p>11 月 5 日报的 3 个卡顿案例，两条来自列表过长，一条是封面图未压缩。</p>
+              <div class="card-meta"><span>11月5日</span><span>回复 46</span></div>
+              <div class="tag-row"><span class="tag">移动端</span><span class="tag">加载问题</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="https://picsum.photos/seed/kd0933/480/270" width="480" height="270" loading="lazy" alt="分类文件夹与手写标签特写">
+            <div class="card-body">
+              <h3>失效入口 7 日清理规则</h3>
+              <p>规则原文与三次执行差异，10 月 30 日那次有 6 条延迟到第 9 天才下架。</p>
+              <div class="card-meta"><span>11月1日</span><span>引用 28 次</span></div>
+              <div class="tag-row"><span class="tag">失效清理</span><span class="tag">规则执行</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="section" id="updates" aria-labelledby="upTitle">
+        <div class="section-head">
+          <span class="kicker">Updates</span>
+          <h2 id="upTitle">11月7日前后：条目增删清单</h2>
+        </div>
+        <p class="section-sub">按批次记录，时间取自站内发布日志，最后一条为 11 月 7 日 23:40。</p>
+        <ul class="update-list">
+          <li><time datetime="2026-11-07">11月7日</time><span class="u-main">09 频道新增 48 条，含 11 条“夜间片单”标签条目<small>编号段 0914-0221 至 0914-0268，替换 4 条旧条目</small></span><span class="u-kind">新增</span></li>
+          <li><time datetime="2026-11-07">11月7日</time><span class="u-main">37 条失效入口下架，集中在 04、07 两个频道<small>下架名单可在清理记录第 11 批查到</small></span><span class="u-kind">清理</span></li>
+          <li><time datetime="2026-11-06">11月6日</time><span class="u-main">三色标签说明页改版，标签定义从两档变三档<small>“待核”从“稳定”中拆出，影响 61 条存量标注</small></span><span class="u-kind">规则</span></li>
+          <li><time datetime="2026-11-05">11月5日</time><span class="u-main">片单合集排序改为“整批更新日优先”<small>10 月 28 日修订，11 月 5 日首次生效</small></span><span class="u-kind">排序</span></li>
+          <li><time datetime="2026-11-03">11月3日</time><span class="u-main">移动端列表分页从 20 条调整为 15 条<small>反馈称长列表滚动卡顿，改后首屏加载时间从 2.4 秒降到 1.5 秒</small></span><span class="u-kind">体验</span></li>
+          <li><time datetime="2026-10-30">10月30日</time><span class="u-main">12 个频道名称统一去掉多余前缀<small>旧名称保留在别名表，搜索仍可命中</small></span><span class="u-kind">命名</span></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="section" id="channels" aria-labelledby="chTitle">
+        <div class="section-head">
+          <span class="kicker">Channels</span>
+          <h2 id="chTitle">12 个频道：按你会搜的词编排</h2>
+        </div>
+        <p class="section-sub">每个频道名后括号内为编号前缀，点标签直达对应锚点。</p>
+        <div class="cat-index">
+          <a href="/#picks">夜间片单 <i>09</i></a>
+          <a href="/#picks">三色标签说明 <i>01</i></a>
+          <a href="/#guide">编号规则速查 <i>02</i></a>
+          <a href="/#deep">失效清理记录 <i>03</i></a>
+          <a href="/#updates">批次更新日志 <i>04</i></a>
+          <a href="/#news">别名表与旧名 <i>05</i></a>
+          <a href="/#comments">移动端体验反馈 <i>06</i></a>
+          <a href="/#faq">收藏夹整理方法 <i>07</i></a>
+          <a href="/#rank">高频跳转榜 <i>08</i></a>
+          <a href="/#timeline">规则版本时间线 <i>10</i></a>
+          <a href="/#extra">创作者证言 <i>11</i></a>
+          <a href="/#comments">搜索无结果案例 <i>12</i></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="section" id="deep" aria-labelledby="dpTitle">
+        <div class="section-head">
+          <span class="kicker">Analysis</span>
+          <h2 id="dpTitle">深度解析：索引站的“编号稳定”比“条目数量”更值得看</h2>
+        </div>
+        <div class="deep">
+          <p>先给判断：<strong>看一个索引站有没有维护，先看编号是否稳定，再看它一天加多少条。</strong>理由不复杂——编号一旦频繁变动，旧链接就全部失效，收藏和引用跟着断掉；而新增数量可以靠批量灌入做大，不需要维护。</p>
+
+          <h3>编号规则前后变化：10月12日与10月26日两版写法的差异</h3>
+          <p>10 月 12 日启用的版本是“频道两位 + 流水四位”，中间无连字符，例：<b>09140221</b>。10 月 26 日改成<b>0914-0221</b>，加连字符并把频道细分成两位主号 + 两位子号。这次改动后，站内 214 条条目里有 19 条被换号，编号末尾从 0221 跳到 0240，中间空号未补。空号意味着条目被抽走，不是没编到。</p>
+          <table>
+            <caption>两版编号规则对照</caption>
+            <thead>
+              <tr><th>项目</th><th>09月旧版</th><th>10月12日版</th><th>10月26日版</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>写法</td><td>09-221</td><td>09140221</td><td>0914-0221</td></tr>
+              <tr><td>频道粒度</td><td>1 位</td><td>2 位</td><td>4 位（主+子）</td></tr>
+              <tr><td>是否允许空号</td><td>否</td><td>否</td><td>是</td></tr>
+              <tr><td>换号影响条目</td><td>—</td><td>9 条</td><td>19 条</td></tr>
+            </tbody>
+          </table>
+
+          <h3>“7 日清理”执行的三个差异点</h3>
+          <p>规则写的是“失效后 7 日内下架”。10 月 30 日那批实际有 6 条拖到第 9 天，站内清理记录第 10 批标注原因是“批量脚本未覆盖 04 频道末段”。11 月 7 日的第 11 批补做了覆盖，37 条里 6 条正是上次遗漏的。这条可核对：清理记录第 10 批与第 11 批的条目号能对上。</p>
+          <div class="claim">
+            <strong>可反驳的判断：</strong>把清理延迟理解为“规则失效”并不准确。规则文本没变，变的是执行脚本的覆盖范围；判断维护质量该看补做比例，37 条里补做 6 条，约 16%。
+          </div>
+
+          <h3>三色标签拆成三档后，存量标注的错配</h3>
+          <p>10 月以前标签只有“稳定”和“临时”两档。11 月 6 日拆出“待核”这一档，定义是“入口可打开但内容与编号不符”。改版后 61 条存量标注需要重新归类，其中 23 条落在“待核”区间。这里有一个直接后果：原来标“稳定”的条目里混进了内容不符的，用户按标签筛选时会拿到不准的结果。</p>
+          <blockquote>
+            清理记录第 10 批的原话是“04 频道末段 6 条未纳入自动清理范围，下批补做”。这句话比“系统优化”之类的说法有用，因为它指向具体频道和数量。
+            <footer>——摘自站内清理记录，2026-10-30</footer>
+          </blockquote>
+
+          <h3>把判断拆开核对：三项指标各自怎么查</h3>
+          <table>
+            <caption>维护质量核对表</caption>
+            <thead>
+              <tr><th>指标</th><th>怎么核对</th><th>本次数值</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>编号稳定度</td><td>比对新旧批次同一条目是否换号</td><td>19 / 214 换号</td></tr>
+              <tr><td>清理及时性</td><td>看清理记录是否标注延迟原因</td><td>延迟 6 条，已补做</td></tr>
+              <tr><td>标签准确度</td><td>抽查“稳定”标签条目是否内容相符</td><td>23 条转“待核”</td></tr>
+            </tbody>
+          </table>
+          <p>按这张表，编号稳定度是唯一会在用户侧直接造成断链的指标；条目数量反而不该放在首位。原因也直接：214 条新增里如果换号比例高，用户收藏的旧地址就全废，数量再大也用不上。反过来，如果编号稳定、清理有记录，即便一天只加 20 条，索引也是可用的。</p>
+        </div>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="section" id="guide" aria-labelledby="gdTitle">
+        <div class="section-head">
+          <span class="kicker">Guide</span>
+          <h2 id="gdTitle">从零开始整理一份可用片单：四步</h2>
+        </div>
+        <p class="section-sub">适合第一次接触编号索引的人，按顺序做完即可得到一份可复查的片单。</p>
+        <ol class="steps">
+          <li><b>先记编号再记标题。</b>编号是唯一不会重名的标识，标题可能被改。把“0914-0221”写在前面，标题写后面，一周后回查不会认错条目。</li>
+          <li><b>按频道前缀分组。</b>12 个频道各有两位前缀，把同一前缀的条目排在一起，翻的时候不用来回跳。09 开头的一律归夜间片单，04 开头的归批次更新日志。</li>
+          <li><b>标注批次日期。</b>每条后面写它是哪一批加的，比如“11-07 批次”。批次日期比“最近更新”这类说法可靠，能直接对上更新清单。</li>
+          <li><b>每周清一次失效项。</b>打开条目确认还能不能进，不能进的直接划掉并记下日期。站内清理是 7 日周期，个人整理也按周做，两边的记录能互相印证。</li>
+        </ol>
+        <p>补一条：如果收藏夹里超过 30 条没有复查，先按频道前缀拆成四组，一组一组清，别一次全打开。11 月 5 日那条卡顿反馈，问题就是一次加载了 60 多条列表。</p>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="section" id="faq" aria-labelledby="fqTitle">
+        <div class="section-head">
+          <span class="kicker">FAQ</span>
+          <h2 id="fqTitle">关于编号、清理与标签的常见问题</h2>
+        </div>
+        <details class="faq" open>
+          <summary>编号中间的连字符是什么时候加的？</summary>
+          <div class="ans"><p>10 月 26 日那版规则加上的。此前写作 09140221，之后写作 0914-0221。加连字符是为了区分主频道号和子频道号，同时让空号一眼能看出来。旧写法在别名表里仍可搜到。</p></div>
+        </details>
+        <details class="faq">
+          <summary>为什么有的编号跳号了，是漏编吗？</summary>
+          <div class="ans"><p>跳号通常是条目被抽走，不是漏编。10 月 26 日换号后有 19 条被替换，编号从 0221 跳到 0240，中间的空号对应被替换的旧条目。想确认可以查清理记录对应批次。</p></div>
+        </details>
+        <details class="faq">
+          <summary>三色标签里的“待核”和“临时”怎么区分？</summary>
+          <div class="ans"><p>“待核”指入口能打开但内容和编号不符，需要人工确认；“临时”指入口本身还没稳定，可能随时下架。前者是内容对不上，后者是地址还没定。11 月 6 日拆档时，23 条从“稳定”转入“待核”。</p></div>
+        </details>
+        <details class="faq">
+          <summary>失效清理为什么有时超过 7 天？</summary>
+          <div class="ans"><p>清理脚本按频道分段执行，04 频道末段在 10 月 30 日那批没被覆盖，6 条拖到第 9 天，11 月 7 日第 11 批补做。规则文本没改，改的是覆盖范围。</p></div>
+        </details>
+        <details class="faq">
+          <summary>列表分页从 20 条改成 15 条后有什么变化？</summary>
+          <div class="ans"><p>11 月 3 日调整，首屏加载从 2.4 秒降到 1.5 秒，代价是翻页次数变多。对按编号逐条核对的用户，15 条一页反而更好记位置。</p></div>
+        </details>
+        <details class="faq">
+          <summary>搜索用旧频道名还能不能找到？</summary>
+          <div class="ans"><p>能。10 月 30 日统一改名时保留了别名表，旧名称写在别名表里，搜索时会命中并跳转到新名称页。别名表在 05 频道下可查。</p></div>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="section" id="comments" aria-labelledby="cmTitle">
+        <div class="section-head">
+          <span class="kicker">Feedback</span>
+          <h2 id="cmTitle">用户反馈：跳号、卡顿与别名表</h2>
+        </div>
+        <p class="section-sub">节选自 11 月 1 日至 11 月 7 日的站内留言，保留原始措辞。</p>
+        <div class="comment-list">
+          <div class="comment">
+            <div class="comment-top"><b>阿螺</b><span class="who">· 09频道常客</span><span class="stars">★★★★☆</span><time datetime="2026-11-07">11月7日</time></div>
+            <p>0914-0221 到 0225 这五条我在收藏夹里都有，11 月 7 日更新后 0222 和 0224 变成空了，页面上没写原因，得自己去翻清理记录第 11 批才看到。</p>
+          </div>
+          <div class="comment">
+            <div class="comment-top"><b>老周</b><span class="who">· 整理党</span><span class="stars">★★★☆☆</span><time datetime="2026-11-06">11月6日</time></div>
+            <p>三色标签拆成三档是好事，但我之前按“稳定”筛出来的 40 多条，改版后有一批进了“待核”。标签说明页写得清楚，可没有逐条列出哪些变了，只能自己一条条点。</p>
+          </div>
+          <div class="comment">
+            <div class="comment-top"><b>小满</b><span class="who">· 移动端用户</span><span class="stars">★★★★☆</span><time datetime="2026-11-05">11月5日</time></div>
+            <p>11 月 3 日改 15 条一页之后明显不卡了。之前滑到第 40 条左右会停一下，现在一页 15 条直接到底。</p>
+          </div>
+          <div class="comment">
+            <div class="comment-top"><b>灰鸽</b><span class="who">· 05频道</span><span class="stars">★★☆☆☆</span><time datetime="2026-11-04">11月4日</time></div>
+            <p>别名表这个想法可以，但旧名“九色夜间”搜出来还是没跳新名，只提示“未找到”。后来发现要搜“夜间片单”才中，觉得别名表没真正接进搜索。</p>
+          </div>
+          <div class="comment">
+            <div class="comment-top"><b>Kite</b><span class="who">· 跳转榜关注者</span><span class="stars">★★★★★</span><time datetime="2026-11-03">11月3日</time></div>
+            <p>高频跳转榜每周更新一次很实用，11 月 2 日那期前三是 09、04、01 三个频道，和我自己翻的顺序基本一致。就是榜单没写统计口径，是跳转次数还是收藏数？</p>
+          </div>
+          <div class="comment">
+            <div class="comment-top"><b>半川</b><span class="who">· 低频访问</span><span class="stars">★★★☆☆</span><time datetime="2026-11-02">11月2日</time></div>
+            <p>编号规则速查那页挺好，两版写法并排列出来，旧写法 09140221 和新写法 0914-0221 的区别一眼能看懂。就是字有点小，手机上要放大。</p>
+          </div>
+          <div class="comment">
+            <div class="comment-top"><b>木盒子</b><span class="who">· 11频道读者</span><span class="stars">★★★★☆</span><time datetime="2026-11-01">11月1日</time></div>
+            <p>创作者证言里那位做片单的人说“编号比标题长久”，和我半年的使用感受一样。标题改过三次，编号只换过一次号。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="section" id="news" aria-labelledby="nwTitle">
+        <div class="section-head">
+          <span class="kicker">Briefs</span>
+          <h2 id="nwTitle">相关资讯：规则、名单与统计口径</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-item">
+            <h3>清理记录第 11 批公开补做名单</h3>
+            <p>37 条下架条目中 6 条为 10 月 30 日延迟项，04 频道 4 条、07 频道 2 条。</p>
+            <time datetime="2026-11-07">11月7日</time>
+          </article>
+          <article class="news-item">
+            <h3>三色标签说明页更新定义文字</h3>
+            <p>“待核”定义从“待确认”改为“入口可打开但内容与编号不符”，与“临时”区分开。</p>
+            <time datetime="2026-11-06">11月6日</time>
+          </article>
+          <article class="news-item">
+            <h3>高频跳转榜补充统计口径</h3>
+            <p>11 月 4 日反馈提出榜单未注明口径，随后标注为站内跳转次数，统计区间为自然周。</p>
+            <time datetime="2026-11-04">11月4日</time>
+          </article>
+          <article class="news-item">
+            <h3>别名表与搜索的接入进度</h3>
+            <p>旧频道名目前仅在 05 频道页内可查，搜索未全部接入，社群反馈 11 月 4 日已记录。</p>
+            <time datetime="2026-11-04">11月4日</time>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="section" id="recommend" aria-labelledby="rcTitle">
+        <div class="section-head">
+          <span class="kicker">Recommend</span>
+          <h2 id="rcTitle">相关推荐：按你会查的词挑</h2>
+        </div>
+        <div class="rec-tags">
+          <a href="/#deep">九色编号怎么读</a>
+          <a href="/#updates">11月7日更新清单</a>
+          <a href="/#guide">片单整理四步法</a>
+          <a href="/#faq">失效清理7日规则</a>
+          <a href="/#comments">三色标签待核区</a>
+          <a href="/#rank">高频跳转榜</a>
+          <a href="/#timeline">规则版本时间线</a>
+          <a href="/#extra">创作者证言</a>
+          <a href="/#channels">频道编号速查</a>
+        </div>
+      </section>
+
+      <!-- 11 补充板块：榜单 -->
+      <section class="section" id="rank" aria-labelledby="rkTitle">
+        <div class="section-head">
+          <span class="kicker">Rank</span>
+          <h2 id="rkTitle">11月首周高频跳转榜</h2>
+        </div>
+        <p class="section-sub">统计口径为站内跳转次数，区间 11 月 1 日至 11 月 7 日。</p>
+        <ol class="rank-list">
+          <li><span>09 频道·夜间片单合集 <small>1.8 万次</small></span><span class="tag">09</span></li>
+          <li><span>04 频道·批次更新日志 <small>1.4 万次</small></span><span class="tag">04</span></li>
+          <li><span>01 频道·三色标签说明 <small>1.1 万次</small></span><span class="tag">01</span></li>
+          <li><span>02 频道·编号规则速查 <small>8700 次</small></span><span class="tag">02</span></li>
+          <li><span>08 频道·高频跳转榜 <small>7600 次</small></span><span class="tag">08</span></li>
+        </ol>
+      </section>
+
+      <!-- 12 补充板块：时间线 -->
+      <section class="section" id="timeline" aria-labelledby="tlTitle">
+        <div class="section-head">
+          <span class="kicker">Timeline</span>
+          <h2 id="tlTitle">规则版本时间线</h2>
+        </div>
+        <ul class="timeline">
+          <li><time datetime="2026-11-07">11月7日</time>第 11 批清理补做完成，37 条下架，其中 6 条为延迟项补做。</li>
+          <li><time datetime="2026-11-06">11月6日</time>三色标签由两档拆为三档，“待核”独立，61 条存量标注待重分。</li>
+          <li><time datetime="2026-11-05">11月5日</time>片单合集排序改为整批更新日优先，首次生效。</li>
+          <li><time datetime="2026-11-03">11月3日</time>移动端列表分页 20 条改为 15 条，首屏加载 2.4 秒降至 1.5 秒。</li>
+          <li><time datetime="2026-10-30">10月30日</time>12 个频道统一改名，别名表同步建立；同批清理延迟 6 条。</li>
+          <li><time datetime="2026-10-26">10月26日</time>编号加入连字符，频道细分主号与子号，19 条换号。</li>
+          <li><time datetime="2026-10-12">10月12日</time>启用四位流水编号，9 条条目完成换号。</li>
+        </ul>
+      </section>
+
+      <!-- 13 补充板块：创作者证言 -->
+      <section class="section" id="extra" aria-labelledby="exTitle">
+        <div class="section-head">
+          <span class="kicker">Voices</span>
+          <h2 id="exTitle">创作者证言：做片单的人怎么看编号</h2>
+        </div>
+        <div class="store-quote">
+          <p>“我整理片单三年，标题改过三回，编号只换过一次。所以别人问我要条目，我报编号，不报标题。编号对不上就是被替换了，一眼能看出来。”</p>
+          <footer>—— 片单整理者 老周，2026年11月2日站内访谈</footer>
+        </div>
+        <div class="store-quote" style="margin-top:.8rem">
+          <p>“标签拆分之前，我按‘稳定’筛，结果有几条点进去内容对不上。现在有‘待核’这一档，至少知道该重点核哪几条。”</p>
+          <footer>—— 09频道常客 阿螺，2026年11月7日留言</footer>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 侧栏 -->
+    <aside aria-label="侧栏导航与辅助信息">
+      <div class="side-card">
+        <h2>本页栏目</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">领域概览<i>两种组织方式</i></a></li>
+          <li><a href="/#picks">精选片单<i>6 组高频跳转</i></a></li>
+          <li><a href="/#updates">最新更新<i>11月7日批次</i></a></li>
+          <li><a href="/#channels">分类频道<i>12 个前缀</i></a></li>
+          <li><a href="/#deep">深度解析<i>编号稳定度</i></a></li>
+          <li><a href="/#guide">体验指南<i>四步整理法</i></a></li>
+          <li><a href="/#faq">常见问答<i>6 个问题</i></a></li>
+          <li><a href="/#comments">用户反馈<i>7 条留言</i></a></li>
+          <li><a href="/#rank">高频跳转榜<i>11月首周</i></a></li>
+          <li><a href="/#timeline">规则时间线<i>7 个节点</i></a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h2>11月7日批次速记</h2>
+        <ul>
+          <li><span class="num">＋</span><span>09 频道新增 48 条，编号 0914-0221 起</span></li>
+          <li><span class="num">－</span><span>37 条失效下架，04 频道 21 条、07 频道 16 条</span></li>
+          <li><span class="num">!</span><span>6 条为 10 月 30 日延迟项补做</span></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h2>编号读法</h2>
+        <p style="font-size:.86rem;color:var(--muted);margin:0">前两位主频道，中两位子频道，后四位流水号。<br>例：<b style="color:var(--gold)">0914-0221</b> 即 09 频道 14 子号第 221 条。</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#111c2c"/>
+          <circle cx="32" cy="25" r="10" fill="#f0b54a"/>
+          <circle cx="21" cy="37" r="6" fill="#e8654f"/>
+          <circle cx="43" cy="37" r="6" fill="#4fb6a6"/>
+        </svg>
+        <div>
+          <div class="fb-name">91色九色蝌蚪</div>
+          <div class="fb-line">按编号与批次记录条目增删的索引站，规则写清楚，改动留痕迹。</div>
+        </div>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h3>内容频道</h3>
+          <ul>
+            <li><a href="/#picks">夜间片单合集</a></li>
+            <li><a href="/#channels">频道编号速查</a></li>
+            <li><a href="/#updates">批次更新日志</a></li>
+            <li><a href="/#rank">高频跳转榜</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>规则说明</h3>
+          <ul>
+            <li><a href="/#deep">编号稳定度解析</a></li>
+            <li><a href="/#faq">失效清理7日规则</a></li>
+            <li><a href="/#faq">三色标签定义</a></li>
+            <li><a href="/#timeline">规则版本时间线</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>参与</h3>
+          <ul>
+            <li><a href="/#comments">用户反馈</a></li>
+            <li><a href="/#extra">创作者证言</a></li>
+            <li><a href="/#guide">片单整理四步法</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="note">页面条目、编号、留言与批次数量均为演示用示例数据，用于说明索引结构，不指向任何真实资源；规则与日期按 2026 年 11 月 8 日前 30 天区间生成。</span>
+      <span class="upd">更新于 2026-11-08 · 对应正文：11月7日批次新增与清理</span>
+    </div>
+    <div class="foot-bottom" style="padding-top:.4rem">
+      <span>© 2026 91色九色蝌蚪 · 内容示例站点</span>
+      <span>静态首页 · 无外部脚本</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var navToggle = document.getElementById('navToggle');
+  var mainNav = document.getElementById('mainNav');
+  if(navToggle && mainNav){
+    navToggle.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? '收起主题导航' : '展开主题导航');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.closest('a') && window.matchMedia('(max-width:720px)').matches){
+        mainNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  var ticking = false;
+  function onScroll(){
+    if(!ticking){
+      window.requestAnimationFrame(function(){
+        if(toTop){ toTop.classList.toggle('show', window.scrollY > 480); }
+        highlight();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'});
+    });
+  }
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return id ? document.getElementById(id) : null;
+  });
+  function highlight(){
+    var offset = 200;
+    var current = -1;
+    for(var i = 0; i < targets.length; i++){
+      if(targets[i] && targets[i].getBoundingClientRect().top <= offset){
+        current = i;
+      }
+    }
+    sideLinks.forEach(function(a, i){
+      a.classList.toggle('active', i === current);
+    });
+  }
+  onScroll();
+
+  /* 站内查找 */
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var feedback = document.getElementById('searchFeedback');
+  if(form && input && feedback){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = input.value.trim();
+      feedback.classList.remove('on');
+      if(!q){ return; }
+      var nodes = document.querySelectorAll('main h2, main h3, main .tag, main .rec-tags a, main .cat-index a, aside h2');
+      var hit = null;
+      for(var i = 0; i < nodes.length; i++){
+        if(nodes[i].textContent.indexOf(q) !== -1){
+          hit = nodes[i];
+          break;
+        }
+      }
+      if(hit){
+        var t = hit.closest('section, aside, .card, .news-item') || hit;
+        if(t.id){ t.scrollIntoView({behavior:'smooth', block:'start'}); }
+        feedback.textContent = '已定位到包含“' + q + '”的条目：' + hit.textContent.trim().slice(0, 30);
+        feedback.classList.add('on');
+      }else{
+        feedback.textContent = '没有找到包含“' + q + '”的条目。可试：编号、夜间片单、三色标签、清理记录、高频跳转。';
+        feedback.classList.add('on');
+      }
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "91色九色蝌蚪",
+  "description": "按编号与批次记录条目增删的资源索引站首页示例，含频道分类、更新清单与规则解析。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "编号中间的连字符是什么时候加的？",
+      "acceptedAnswer": {"@type": "Answer", "text": "10月26日那版规则加上的，此前写作09140221，之后写作0914-0221，用于区分主频道号与子频道号。"}
+    },
+    {
+      "@type": "Question",
+      "name": "为什么有的编号跳号了，是漏编吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "跳号通常是条目被抽走，不是漏编。10月26日换号后有19条被替换，空号对应被替换的旧条目。"}
+    },
+    {
+      "@type": "Question",
+      "name": "三色标签里的“待核”和“临时”怎么区分？",
+      "acceptedAnswer": {"@type": "Answer", "text": "待核指入口能打开但内容和编号不符；临时指入口本身还没稳定、可能随时下架。"}
+    },
+    {
+      "@type": "Question",
+      "name": "失效清理为什么有时超过 7 天？",
+      "acceptedAnswer": {"@type": "Answer", "text": "清理脚本按频道分段执行，04频道末段在10月30日那批未被覆盖，6条延迟到第9天，11月7日第11批补做。"}
+    },
+    {
+      "@type": "Question",
+      "name": "列表分页从 20 条改成 15 条后有什么变化？",
+      "acceptedAnswer": {"@type": "Answer", "text": "11月3日调整，首屏加载从2.4秒降到1.5秒，代价是翻页次数变多。"}
+    },
+    {
+      "@type": "Question",
+      "name": "搜索用旧频道名还能不能找到？",
+      "acceptedAnswer": {"@type": "Answer", "text": "可以，10月30日统一改名时保留了别名表，旧名称写在别名表里，搜索可命中并跳转。"}
+    }
+  ]
+}
+</script>
+</body>
+          </html>
